@@ -32,3 +32,23 @@ The infrastructure is distributed across 6 specialized VMs to simulate a real-wo
    ```bash
    git clone [https://github.com/rocketonthemoon/vagrant-project.git](https://github.com/rocketonthemoon/vagrant-project.git)
    cd vagrant-project
+
+2. **Spin up the stack:**
+    ```bash
+    vagrant up
+
+3. **Connection Details:**
+```markdown
+ Component Details
+| Service | VM Name | IP Address | Port |
+| :--- | :--- | :--- | :--- |
+| Load Balancer | web01 | 192.168.33.10 | 80 |
+| App Server 1 | app01 | 192.168.33.11 | 8080 |
+| App Server 2 | app02 | 192.168.33.12 | 8080 |
+| Database | db01 | 192.168.33.14 | 3306 |
+| Memcached | mc01 | 192.168.33.15 | 11211 |
+| RabbitMQ | rmq01 | 192.168.33.16 | 5672 |
+
+4. **Execute scripts:**
+
+Execute each scripts on respective vm's
