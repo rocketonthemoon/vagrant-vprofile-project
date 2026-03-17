@@ -1,4 +1,6 @@
-# vagrant-project
+<img width="1318" height="785" alt="architecture" src="https://github.com/user-attachments/assets/9bb56880-0f53-4052-a915-f6d5648bebe1" />
+
+<img width="1137" height="543" alt="vprofile_web_arc" src="https://github.com/user-attachments/assets/115bd702-0c63-41b7-9b20-6845b8e30309" />
 
 # vProfile Multi-Tier Java Application
 
