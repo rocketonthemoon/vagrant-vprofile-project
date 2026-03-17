@@ -3,6 +3,8 @@ dnf update -y
 dnf install epel-release -y
 
 dnf install java-1.8.0-openjdk -y
+# we are setting java 1.8 as default java version, as tomcat 8 is compatible with java 1.8 and we want to avoid any compatibility issues with newer java versions
+sudo alternatives --set java $(alternatives --display java | grep 'family java-1.8.0' | awk '{print $1}')
 
 dnf install git maven wget -y
 

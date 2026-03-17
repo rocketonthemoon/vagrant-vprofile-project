@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
 	  db01.vm.hostname = "db01"
     db01.vm.network "private_network", ip: "192.168.33.15"
     # MySQL installation and configuration
-    # db01.vm.provision "shell", path: "db01-setup.sh"
+    db01.vm.provision "shell", path: "db01-setup.sh"
   end
 
   ### Memcache vm  #### 
@@ -24,7 +24,7 @@ Vagrant.configure("2") do |config|
 	  mc01.vm.hostname = "mc01"
     mc01.vm.network "private_network", ip: "192.168.33.14"
     # Memcached installation and configuration
-    # mc01.vm.provision "shell", path: "mc01-setup.sh"
+    mc01.vm.provision "shell", path: "mc01-setup.sh"
   end
 
   ### RabbitMQ vm  ####
@@ -33,7 +33,7 @@ Vagrant.configure("2") do |config|
 	  rmq01.vm.hostname = "rmq01"
     rmq01.vm.network "private_network", ip: "192.168.33.13"
     # RabbitMQ installation and configuration
-    # rmq01.vm.provision "shell", path: "rmq01-setup.sh"
+    rmq01.vm.provision "shell", path: "rmq01-setup.sh"
   end
 
   ### tomcat vm 1 ###
@@ -46,7 +46,7 @@ Vagrant.configure("2") do |config|
       vb.cpus = 2
 	  end
     # Tomcat installation and configuration
-    # app01.vm.provision "shell", path: "app-setup.sh"
+    app01.vm.provision "shell", path: "app-setup.sh"
   end
 
   ### tomcat vm 2 ###
@@ -59,7 +59,7 @@ Vagrant.configure("2") do |config|
       vb.cpus = 2
 	  end
     # Tomcat installation and configuration
-    # app02.vm.provision "shell", path: "app-setup.sh"
+    app02.vm.provision "shell", path: "app-setup.sh"
   end
 
   ### Nginx VM ###
@@ -73,7 +73,7 @@ Vagrant.configure("2") do |config|
       vb.cpus = 2
     end
     # Nginx reverse proxy configuration
-    # web01.vm.provision "shell", path: "web01-setup.sh"
+    web01.vm.provision "shell", path: "web01-setup.sh"
   end
   
 end
