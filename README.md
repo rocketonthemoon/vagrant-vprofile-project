@@ -48,3 +48,11 @@ The infrastructure is distributed across 6 specialized VMs to simulate a real-wo
 | Database | db01 | 192.168.33.14 | 3306 |
 | Memcached | mc01 | 192.168.33.15 | 11211 |
 | RabbitMQ | rmq01 | 192.168.33.16 | 5672 |
+<<<<<<< HEAD
+=======
+```
+
+4. **Execute scripts:**
+
+Execute each scripts on respective vm's
+>>>>>>> b97a9f53f8752f98ee211ba8d04f4048e22a3be0
