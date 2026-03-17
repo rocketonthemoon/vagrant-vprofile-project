@@ -2,7 +2,7 @@
 
 <img width="1137" height="543" alt="vprofile_web_arc" src="https://github.com/user-attachments/assets/115bd702-0c63-41b7-9b20-6845b8e30309" />
 
-# vProfile Multi-Tier Java Application
+# Multi-Tier Java Application using Vagrant
 
 [![Vagrant](https://img.shields.io/badge/Vagrant-2.2+-blue.svg)](https://www.vagrantup.com/)
 [![Java](https://img.shields.io/badge/Java-8-orange.svg)](https://www.java.com/)
